@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-staticsite-tf"
-    storage_account_name = "staticsitekbtf001"
+    resource_group_name  = "testekk"
+    storage_account_name = "socorro"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
@@ -16,5 +16,5 @@ terraform {
 provider "azurerm" {
   features {}
   skip_provider_registration = true
-  alias                      = "cloud"
+  alias                      = "claudio"
 }

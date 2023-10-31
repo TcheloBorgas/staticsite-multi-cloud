@@ -6,14 +6,14 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "staticsite-multicloud-tf-v001"
+    bucket         = "boqueta"
     key            = "terraform.tfstate"
-    dynamodb_table = "staticsite-multicloud-tf-v001"
+    dynamodb_table = "senha"
     region         = "us-east-1"
   }
 } 
 
 provider "aws" {
   region = "us-east-1"
-  alias  = "cloud"
+  alias  = "claudio"
 }
